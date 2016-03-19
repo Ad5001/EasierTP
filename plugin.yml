@@ -1,0 +1,70 @@
+---
+name: EasierTP
+author: Ad5001
+version: "0.5"
+api: [2.0.0, 1.14.0]
+main: Ad5001\EasierTP\Main
+commands: 
+   up:
+      description: "Go up with a simple command"
+      usage: "/up <number of blocks>"
+      permission: easiertp.command.up
+   down:
+      description: "Go down with a simple command"
+      usage: "/down <number of blocks>"
+      permission: easiertp.command.down
+   north:
+      description: "Go north (z-) with a simple command"
+      usage: "/north <number of blocks>"
+      permission: easiertp.command.north
+      aliases: [z-]
+   south:
+      description: "Go south (z+) with a simple command"
+      usage: "/south <number of blocks>"
+      permission: easiertp.command.south
+      aliases: [z+]
+   east:
+      description: "Go east (x+) with a simple command"
+      usage: "/east <number of blocks>"
+      permission: easiertp.command.east
+      aliases: [x+]
+   west:
+      description: "Go west (x-) with a simple command"
+      usage: "/west <number of blocks>"
+      permission: easiertp.command.west
+      aliases: [x-]
+   surface:
+      description: "Go to the surface instantly with a simple command"
+      usage: "/west <number of blocks>"
+      permission: easiertp.command.surface
+      aliases: [top]
+   facing:
+      description: "Display where you're looking at and if a axis is specified, set your view to this axis"
+      usage: "/facing [North, East, South and West]"
+      permission: easiertp.command.facing
+permissions:
+    easiertp.command.down:
+      default: op
+      description: "Go down with a simple command"
+    easiertp.command.up:
+      default: op
+      description: "Go up with a simple command"
+    easiertp.command.north:
+      default: op
+      description: "Go north (z-) with a simple command"
+    easiertp.command.south:
+      default: op
+      description: "Go south (z+) with a simple command"
+    easiertp.command.east:
+      default: op
+      description: "Go east (x+) with a simple command"
+    easiertp.command.west:
+      default: op
+      description: "Go west (x-) with a simple command"
+    easiertp.command.surface:
+      default: op
+      description: "Go to the surface instantly with a simple command"
+    easiertp.command.facing:
+      default: op
+      description: "Display where you're looking at and if a axis is specified, set your view to this axis"
+...
